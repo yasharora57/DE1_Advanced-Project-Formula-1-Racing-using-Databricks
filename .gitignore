@@ -1,1 +1,9 @@
 Miscellaneous/
+*/dataSink/*
+*/.idea*
+*/app-logs*
+*__pycache__*
+*/chk-point-dir*
+
+*.crc
+*/*/_SUCCESS
