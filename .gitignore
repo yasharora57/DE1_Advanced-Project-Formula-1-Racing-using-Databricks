@@ -7,3 +7,5 @@ Miscellaneous/
 
 *.crc
 */*/_SUCCESS
+~$*
+*.tmp
