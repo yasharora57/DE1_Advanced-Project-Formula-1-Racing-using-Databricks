@@ -2,7 +2,7 @@
 
 ## Formula 1 Racing Data Engineering 🏎️📊
 
-## How to Run the Project (Without Using ADF)
+## How to Use (Without Using ADF)
 
 Follow these steps to set up and run the project:
 
