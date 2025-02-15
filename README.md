@@ -2,47 +2,6 @@
 
 ## Formula 1 Racing Data Engineering 🏎️📊
 
-## How to Use (Without Using ADF)
-
-Follow these steps to set up and run the project:
-
-1. **Create Required Azure Resources:**
-   - **ADLS Gen2 (Azure Data Lake Storage Gen2)**
-   - **Azure Databricks**
-   - **Azure Key Vault**
-
-2. **Set Up ADLS Containers:**
-   - In your ADLS Gen2 account, create three containers:
-     - `raw`
-     - `processed`
-     - `presentation`
-
-3. **Mount ADLS in Databricks:**
-   - Mount your ADLS Gen2 account as an external storage on Databricks using SAS tokens.
-   - Ensure that the mount point is properly configured so your notebooks can access the data in ADLS.
-
-4. **Configure Secrets:**
-   - Create secrets for the SAS keys in Azure Key Vault.
-   - Link these secrets to a Databricks Secret Scope so that they can be referenced securely in your notebooks.
-
-5. **Update the Setup File:**
-   - Open the `set-up` file and update the following parameters:
-     - Data lake name
-     - SAS tokens
-     - Key names  
-   Make sure the values reflect your actual Azure resources.
-
-6. **Configure Paths in the Configuration Files:**
-   - In the `includes` folder (inside the `configuration` file), update the path names to correctly refer to the three containers (`raw`, `processed`, and `presentation`).
-
-7. **Run the Project Files in Sequence:**
-   - **Raw:** Execute all the files in the `raw` folder.
-   - **Ingestion:** Run only the file `0.ingest_all_files.py` from the ingestion folder.
-   - **Transformation (Trans):** Run all the files in the `trans` folder.
-   - **Analysis:** Run all the files in the `analysis` folder.
-
-Following these steps will allow you to load data from your ADLS containers into Databricks, process and transform the data, and finally perform the necessary analyses as part of your project.
-
 ### 📑 Contents:
 - **Code**
 - **Project Resources:** Data files, Data model, User Guide
@@ -108,6 +67,47 @@ The **Formula 1 Racing Data Engineering Project** is designed to ingest, process
      - Orchestrates the full ETL workflow by running ingestion pipeline before transformation pipeline
 
 ---
+
+## How to Use (Without Using ADF)
+
+Follow these steps to set up and run the project:
+
+1. **Create Required Azure Resources:**
+   - **ADLS Gen2 (Azure Data Lake Storage Gen2)**
+   - **Azure Databricks**
+   - **Azure Key Vault**
+
+2. **Set Up ADLS Containers:**
+   - In your ADLS Gen2 account, create three containers:
+     - `raw`
+     - `processed`
+     - `presentation`
+
+3. **Mount ADLS in Databricks:**
+   - Mount your ADLS Gen2 account as an external storage on Databricks using SAS tokens.
+   - Ensure that the mount point is properly configured so your notebooks can access the data in ADLS.
+
+4. **Configure Secrets:**
+   - Create secrets for the SAS keys in Azure Key Vault.
+   - Link these secrets to a Databricks Secret Scope so that they can be referenced securely in your notebooks.
+
+5. **Update the Setup File:**
+   - Open the `set-up` file and update the following parameters:
+     - Data lake name
+     - SAS tokens
+     - Key names  
+   Make sure the values reflect your actual Azure resources.
+
+6. **Configure Paths in the Configuration Files:**
+   - In the `includes` folder (inside the `configuration` file), update the path names to correctly refer to the three containers (`raw`, `processed`, and `presentation`).
+
+7. **Run the Project Files in Sequence:**
+   - **Raw:** Execute all the files in the `raw` folder.
+   - **Ingestion:** Run only the file `0.ingest_all_files.py` from the ingestion folder.
+   - **Transformation (Trans):** Run all the files in the `trans` folder.
+   - **Analysis:** Run all the files in the `analysis` folder.
+
+Following these steps will allow you to load data from your ADLS containers into Databricks, process and transform the data, and finally perform the necessary analyses as part of your project.
 
 This project showcases an **end-to-end data pipeline** for real-time analytics and performance monitoring in **Formula 1 racing**. 🎽
 
