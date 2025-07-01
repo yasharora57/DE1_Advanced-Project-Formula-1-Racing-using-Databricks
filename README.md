@@ -7,7 +7,7 @@
 - **Project Resources:** Data files, Data model, User Guide
 - **Project Architecture**
 
-The **Formula 1 Racing Data Engineering Project** is designed to ingest, process, and analyze historical and incremental F1 race data from **1950 to 2021** using the **Medallion Architecture** on **Databricks** with **Azure Data Lake Gen-2 (ADLS)** and **Azure Data Factory (ADF)**.
+The **Formula 1 Racing Data Engineering Project** is designed to ingest, process, and analyze historical and incremental F1 race data from **1950 to 2021** using the **Lakehouse Medallion Architecture** in **Databricks** with **Azure Data Lake Gen-2 (ADLS)** and **Azure Data Factory (ADF)**.
 
 ---
 
