@@ -1,4 +1,4 @@
-# DE1_Project-Formula-1-Racing
+# Project-Formula-1-Racing
 
 ## Formula 1 Racing Data Engineering 🏎️📊
 
