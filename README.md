@@ -13,7 +13,7 @@ The **Formula 1 Racing Data Engineering Project** is designed to ingest, process
 
 ### 🚀 Key Features:
 
-- **Tech Stack:** Databricks, ADLS Gen-2, ADF, Azure Key Vault, PySpark, SQL
+- **Tech Stack:** Databricks, ADLS Gen-2, ADF, Azure Key Vault, PySpark, SQL, SCD-1
 
 - **Data Storage:**
   - **Raw Layer:** CSV & JSON files (full load & incremental data).
