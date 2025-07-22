@@ -31,7 +31,7 @@ The **Formula 1 Racing Data Engineering Project** is designed to ingest, process
 
 - **Incremental Loading:**
   1. **Processed Layer:** 
-     - Implemented for race results, pit stops, lap times, and qualifying data
+     - Implemented SCD Type-1 for race results, pit stops, lap times, and qualifying data
      - Utilizes `dbutils` date parameterized widget to ingest corresponding date files from raw container
      - Files are written in the processed layer by using Merge (Upsert) operations with dynamic partition pruning based on `race_id` column
      - Managed delta tables pointing to these files are stored in the f1_processed schema
